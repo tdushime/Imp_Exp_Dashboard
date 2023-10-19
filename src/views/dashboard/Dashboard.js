@@ -12,7 +12,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     //const importsFilePath = '/imports.csv'
-    const importsFilePath = './public/imports.csv'
+    const importsFilePath = 'https://github.com/tdushime/Imp_Exp_Dashboard/blob/master/public/exports.csv'
     Papa.parse(importsFilePath, {
       download: true,
       header: true,
@@ -40,7 +40,7 @@ const Dashboard = () => {
       : []
   console.log('exportsdata: ', exportsData)
   console.log('importsdata: ', importsData)
-  console.log('II ', 'II22')
+  console.log('imports path: ', importsFilePath)
   const countries = [...new Set(exportsData.map((item) => item.country))].filter(Boolean)
   const customColorPalette = [
     '#0B5394',
