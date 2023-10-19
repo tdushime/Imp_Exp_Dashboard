@@ -40,7 +40,7 @@ const Dashboard = () => {
       : []
   console.log('exportsdata: ', exportsData)
   console.log('importsdata: ', importsData)
-  console.log('II ', 'II')
+  console.log('II ', 'II2')
   const countries = [...new Set(exportsData.map((item) => item.country))].filter(Boolean)
   const customColorPalette = [
     '#0B5394',
