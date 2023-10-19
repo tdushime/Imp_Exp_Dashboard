@@ -12,7 +12,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     //const importsFilePath = '/imports.csv'
-    const importsFilePath = '/Imp_Exp_Dashboard/public/imports.csv'
+    const importsFilePath = './public/imports.csv'
     Papa.parse(importsFilePath, {
       download: true,
       header: true,
